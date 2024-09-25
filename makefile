@@ -2,8 +2,6 @@
 # $^  表示所有的依赖文件
 # $<  表示第一个依赖文件
 # $?  表示比目标还要新的依赖文件列表
-# export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
-# export TVM_HOME=./TVM
 BRANCH = $(shell git symbolic-ref --short HEAD)
 PW = $(shell cat ~/文档/PW)
 # tvm ====================================================================================
