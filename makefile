@@ -5,8 +5,9 @@
 BRANCH = $(shell git symbolic-ref --short HEAD)
 PW = $(shell cat ~/文档/PW)
 # git ====================================================================================
-sub_pull:
-	git submodule foreach --recursive 'git pull'
+tvm_update:
+	cd TVM && git pull
+	cd TVM && git submodule update --recursive
 commit:
 	git add -A
 	@echo "Please type in commit comment: "; \
